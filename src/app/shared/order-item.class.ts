@@ -1,7 +1,7 @@
 export class OrderItem {
     Id:number;
     Name:string;
-    Price:null;
+    Price:number;
     Orderid:number;
     ItemId:number;
     Quantity:number;
