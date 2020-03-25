@@ -17,7 +17,19 @@ export class ItemService {
   // }
 
   getItemList(){
-    return this.http.get(environment.apiURL+'/Item').toPromise();
+    var datalist =this.http.get(environment.apiURL+'/Items').toPromise();
+    return datalist;
   }
+
+  //   getItemList(){
+  //   var datalist= this.http.get(environment.apiURL+'/Employees').toPromise();
+  //   return datalist;
+  // }
+
+  //   getItemList(){
+  //   return this.http.get(environment.apiURL+'/Departments').toPromise();
+  // }
+
+  
 
 }
