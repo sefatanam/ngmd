@@ -43,6 +43,11 @@ export class OrderComponent implements OnInit {
 
   }
 
+
+  OnDeleteItem(ItemId:number,i:number){
+    this.service.orderItems.splice(i,1);
+  }
+
   
   
 

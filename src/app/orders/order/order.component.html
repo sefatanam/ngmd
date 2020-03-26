@@ -67,7 +67,8 @@
           <td>{{item.Total}}</td>
           <td>{{item.Quantity}}</td>
           <td>
-            <a class="btn btn-sm btn-info text-white" (click)="AddOrEditItem(i,service.formData.Id)"><i class="fa fa-pecil"></i></a>
+            <a class="btn btn-sm btn-info text-white" (click)="AddOrEditItem(i,service.formData.Id)"><i class="fa fa-pencil"></i></a>
+            <a class="btn btn-sm btn-danger text-white ml-1" (click)="OnDeleteItem(item.Id,i)"><i class="fa fa-trash"></i></a>
           </td>
   
   
